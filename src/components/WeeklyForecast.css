@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding: 0;;
+    box-sizing:border-box;
+    font-family:Nunito;
+    color:black;
+    background-color: skyblue;
+}
+
+#city, #country
+{
+    text-align: center;
+    color:white;
+    font-family: Verdana, sans-serif;
+    font-size: 4em;
+}
+
+#country
+{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+
+
+.week
+{
+    margin: 2rem;
+}
+
+.first, #temp, #detail, #det, #Day, .rest
+{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+#currIcon
+{
+    width: 60%;
+    height: auto;
+    padding: 0;
+    margin: 0px;
+    border: 0;
+}
+
+#temp
+{
+    font-size: 2rem;
+    color: black;
+}
+
+#change
+{
+    color: black;
+}
+
+tr#Day
+{
+    font-size: 1.3rem;
+    color: green;
+}
+
+#detail, #det
+{
+    text-align: left;
+}
+
+#detail
+{
+    text-transform: capitalize;
+}
+
+.first
+{
+    margin-bottom: 2rem;
+}
+
+th#sub
+{
+    padding-bottom: 1rem;
+}
+
+.rest
+{
+    border: solid 0.1em black;
+    border-radius: 10px;
+}
+
+#detail
+{
+    color:darkblue;
+}

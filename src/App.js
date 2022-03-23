@@ -1,11 +1,13 @@
 import React, { useState,useEffect } from 'react';
+
+import WeeklyForecast from './components/WeeklyForecast';
+
 import './index.css';
 import axios from "axios";
 const liveweather = {
   key: "4ac7d2859ab7a6c64fc946c11274149f",
   base: "https://api.openweathermap.org/data/2.5/"
 }
-
 function App() {
   const [query, queryset] = useState('');
   const [weather1, anyweather] = useState({});
@@ -135,6 +137,7 @@ function App() {
           </div>
   ) : ('')}
         </main>
+        <div><WeeklyForecast /></div>
         </div>   
   );
 }
