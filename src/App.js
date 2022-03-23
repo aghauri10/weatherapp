@@ -14,6 +14,9 @@ function App() {
   const [weather, setWeather] = useState("");
   const [temperature, setTemperature] = useState(0);
   const [cityName, setCityName] = useState("");
+  const [humidity, setHumidity] = useState(0);
+  const [visibility, setVisibility] = useState(0);
+  const [windspeed, setWindSpeed] = useState(0);
 
   const savePositionToState = (position) => {
     setLatitude(position.coords.latitude);
@@ -32,6 +35,9 @@ function App() {
       setCityName(res.data.name);
       setWeather(res.data.weather[0].main);
       console.log(res.data);
+      setHumidity(res.data.main.humidity);
+      setWindSpeed(res.data.wind.speed);
+      setVisibility(res.data.visibility);
     } catch (err) {
       console.error(err);
     }
@@ -81,6 +87,20 @@ function App() {
         <div>weather</div>
             <div>{weather}</div>
             </div>
+        
+        <div className="Currentinfo" >
+        <div>Humidity</div>
+            <div>{humidity}</div>
+            </div>
+        <div className="Currentinfo" >
+        <div>Wind Speed</div>
+            <div>{windspeed}</div>
+            </div>
+        <div className="Currentinfo" >
+        <div>Visibility</div>
+            <div>{visibility}</div>
+            </div>
+            
         <div className="Currentinfo" >
           <div>Time</div>
         <div className="date1">{time_date(new Date())}</div>
@@ -119,5 +139,5 @@ function App() {
   );
 }
 
+
 export default App;
-//hell
