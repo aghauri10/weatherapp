@@ -75,7 +75,7 @@ function App() {
             </div>
         <div className="Currentinfo" >
         <div>Temperature</div>
-            <div>{temperature}ºC</div>
+            <div>{Math.round(temperature)}ºC</div>
             </div>
         <div className="Currentinfo" >
         <div>weather</div>
@@ -103,11 +103,11 @@ function App() {
         <div className="location_react">
           <div className="location">{weather1.name}, {weather1.sys.country}</div>
           <div className="date">{time_date(new Date())}</div>
-          
+          <div>you can u do this</div>
           </div>
         <div className = "weather_react">
           <div className="temp">
-            {(weather1.main.temp)}°c
+            {Math.round((weather1.main.temp))}°c
           </div>
           <div className="weather">{weather1.weather[0].main}</div>
         </div>
@@ -120,4 +120,4 @@ function App() {
 }
 
 export default App;
-//hello
+//hell
